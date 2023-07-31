@@ -17,7 +17,7 @@ const Sidebar = () => {
       <div
         className={`w-[80%] md:w-[40%] fixed lg:static top-0 ${
           showSidebar ? "left-0" : "-left-full"
-        } lg:w-80 h-full  text-gray-400 transition-all bg-[#181A20] p-4 lg:p-0 shadow-2xl lg:shadow-none z-50`}
+        } lg:w-80 h-full overflow-y-scroll text-gray-400 transition-all bg-[#181A20] p-4 lg:p-0 shadow-2xl lg:shadow-none z-50`}
       >
         {/* Search */}
         <div className="bg-[#362C29]/50 rounded-2xl p-4 mb-4">
