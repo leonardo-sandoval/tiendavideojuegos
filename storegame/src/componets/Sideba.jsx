@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   RiMoneyDollarCircleLine,
   RiFacebookLine,
@@ -192,7 +192,7 @@ const Sidebar = () => {
         className="lg:hidden fixed bottom-4 right-4 bg-[#E58D27] p-4 rounded-full text-xl"
       >
         {showSidebar ? <RiCloseLine /> : <RiFilter3Line />}
-      </button>
+      </button>  
     </>
   );
 };

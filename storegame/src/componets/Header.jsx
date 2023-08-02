@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import {
   RiShoppingCartLine,
   RiHeart2Line,
@@ -26,53 +28,46 @@ const Header = () => {
         <button onClick={() => setShowMenu(!showMenu)} className="text-3xl p-4">
           <RiCloseLine />
         </button>
+        <nav>
         <ul className="mt-20">
           <li>
-            <a href="#" className="text-4xl block text-center p-4">
+            <Link to="/" className="text-4xl block text-center p-4">
               Home
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-4xl block text-center p-4">
+            </Link>
+            <Link to="/stream" className="text-4xl block text-center p-4">
               Streams
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/store"
               className="text-4xl text-[#E58D27] block p-4 text-center"
             >
               Game store
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-4xl block text-center p-4">
+            </Link>
+            <Link to="/new" className="text-4xl block text-center p-4">
               News
-            </a>
+            </Link>
           </li>
         </ul>
+        </nav>
       </div>
       {/* Menu */}
       <ul className="hidden lg:flex items-center gap-6">
         <li>
-          <a href="#" className="hover:text-[#E58D27] transition-colors">
+          <Link to="/" className="hover:text-[#E58D27] transition-colors">
             Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:text-[#E58D27] transition-colors">
+          </Link>
+          <Link
+            to="/stream"
+            className="hover:text-[#E58D27] transition-colors"
+          >
             Streams
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-[#E58D27] transition-colors">
+          </Link>
+          <Link to="/store" className="text-[#E58D27] transition-colors">
             Game store
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:text-[#E58D27] transition-colors">
+          </Link>
+          <Link to="/new" className="hover:text-[#E58D27] transition-colors">
             News
-          </a>
+          </Link>
         </li>
       </ul>
       {/* User menu */}

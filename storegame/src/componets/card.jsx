@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = (props) => {
   const { img, title, category, price } = props;
 
