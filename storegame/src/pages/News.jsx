@@ -36,34 +36,34 @@ const News = () => {
           price="120"
         />
         <Newer
-          img="https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png"
-          title="Fifa 22"
+          img="https://wallpaperaccess.com/full/2096239.jpg"
+          title="Metroido"
+          category="Xbox Series X"
+          price="90"
+        />
+        <Newer
+          img="https://wallpaperaccess.com/full/2086816.jpg"
+          title="five fire"
           category="Xbox Series X"
           price="120"
         />
         <Newer
-          img="https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png"
-          title="Fifa 22"
+          img="https://wallpaperaccess.com/full/459229.jpg"
+          title="Assasins creed"
+          category="Xbox Series X"
+          price="20"
+        />
+        <Newer
+          img="https://wallpaperaccess.com/full/2126384.jpg"
+          title="Hollow 3"
           category="Xbox Series X"
           price="120"
         />
         <Newer
-          img="https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png"
-          title="Fifa 22"
+          img="https://wallpaperaccess.com/full/2126362.jpg"
+          title="Deadpool"
           category="Xbox Series X"
-          price="120"
-        />
-        <Newer
-          img="https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png"
-          title="Fifa 22"
-          category="Xbox Series X"
-          price="120"
-        />
-        <Newer
-          img="https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png"
-          title="Fifa 22"
-          category="Xbox Series X"
-          price="120"
+          price="180"
         />
       </div>
     </div>
