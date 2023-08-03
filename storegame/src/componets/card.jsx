@@ -2,7 +2,7 @@ const Card = (props) => {
   const { img, title, category, price } = props;
 
   return (
-    <div className="bg-[#362C29]/50 p-6 rounded-2xl flex flex-col gap-2 w-full md:w-auto">
+    <div className="bg-[#362C29]/20 p-6 rounded-2xl flex flex-col gap-2 w-full md:w-auto">
       <img
         src={img}
         className="w-full xl:w-52 h-72 lg:h-64 object-cover rounded-2xl"

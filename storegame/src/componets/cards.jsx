@@ -2,7 +2,7 @@ import Card from "./card";
 
 export const cards = () => {
   return (
-    <main className="h-[90vh] flex gap-8 p-8 pt-0">
+    <main className="h-[90vh] flex gap-4 p-4 pt-0">
       <div className="flex-1 h-full overflow-y-scroll">
         {/* Portada */}
         <div className="rounded-2xl mb-4">
@@ -11,7 +11,7 @@ export const cards = () => {
             className="w-full h-[500px] object-cover object-right md:object-top rounded-2xl"
           />
         </div>
-        <div className="flex md:grid md:grid-cols-2 xl:flex items-center justify-around lg:justify-between flex-wrap gap-8">
+        <div className="flex md:grid md:grid-cols-2 xl:flex items-center justify-around lg:justify-between flex-wrap gap-4">
           <Card
             img="https://image.api.playstation.com/vulcan/img/rnd/202011/0714/vuF88yWPSnDfmFJVTyNJpVwW.png"
             title="Marvel's Spider-Man"

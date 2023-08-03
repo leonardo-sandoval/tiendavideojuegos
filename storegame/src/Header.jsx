@@ -1,19 +1,13 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
-import {
-  RiShoppingCartLine,
-  RiHeart2Line,
-  RiMenu2Line,
-  RiCloseLine,
-} from "react-icons/ri";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { RiMenu2Line, RiCloseLine, RiShoppingCartLine, RiHeart2Line } from 'react-icons/ri';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="h-[7vh] lg:h-[10vh] text-gray-400 py-4 px-10 flex items-center justify-between z-40">
-      {/* Movile */}
+    <header className="h-[7vh] lg:h-[10vh] p-4 text-gray-400 py-4 px-10 flex items-center justify-between z-40 sticky top-0 bg-[#181A20]">
+      {/* Mobile */}
       <button
         onClick={() => setShowMenu(!showMenu)}
         className="lg:hidden text-2xl"
@@ -21,7 +15,7 @@ const Header = () => {
         <RiMenu2Line />
       </button>
       <div
-        className={`fixed left-0 bg-[#181A20] w-full h-full z-50 transition-all ${
+        className={`fixed bg-gray-800 left-0 w-full h-full z-50 transition-all ${
           showMenu ? "top-0" : "-top-full"
         }`}
       >
@@ -29,25 +23,31 @@ const Header = () => {
           <RiCloseLine />
         </button>
         <nav>
-        <ul className="mt-20">
-          <li>
-            <Link to="/" className="text-4xl block text-center p-4">
-              Home
-            </Link>
-            <Link to="/stream" className="text-4xl block text-center p-4">
-              Streams
-            </Link>
-            <Link
-              to="/store"
-              className="text-4xl text-[#E58D27] block p-4 text-center"
-            >
-              Game store
-            </Link>
-            <Link to="/new" className="text-4xl block text-center p-4">
-              News
-            </Link>
-          </li>
-        </ul>
+          <ul className="mt-20 space-y-4"> {/* Espacio vertical entre los enlaces */}
+            <li>
+              <Link to="/" className="text-4xl block text-center p-4">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/stream" className="text-4xl block text-center p-4">
+                Streams
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/store"
+                className="text-4xl text-[#E58D27] block p-4 text-center"
+              >
+                Game store
+              </Link>
+            </li>
+            <li>
+              <Link to="/new" className="text-4xl block text-center p-4">
+                News
+              </Link>
+            </li>
+          </ul>
         </nav>
       </div>
       {/* Menu */}
@@ -56,15 +56,18 @@ const Header = () => {
           <Link to="/" className="hover:text-[#E58D27] transition-colors">
             Home
           </Link>
-          <Link
-            to="/stream"
-            className="hover:text-[#E58D27] transition-colors"
-          >
+        </li>
+        <li>
+          <Link to="/stream" className="hover:text-[#E58D27] transition-colors">
             Streams
           </Link>
+        </li>
+        <li>
           <Link to="/store" className="text-[#E58D27] transition-colors">
             Game store
           </Link>
+        </li>
+        <li>
           <Link to="/new" className="hover:text-[#E58D27] transition-colors">
             News
           </Link>
@@ -96,3 +99,4 @@ const Header = () => {
 };
 
 export default Header;
+
