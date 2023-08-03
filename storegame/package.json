@@ -1,6 +1,7 @@
 {
   "name": "storegame",
   "private": true,
+  "homepage": "https://github.com/leonardo-sandoval/tiendavideojuegos/build",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
